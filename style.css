@@ -71,4 +71,93 @@ header {
   h3 {
     font-size: 1rem;
   }
-  /*fin header desktop*/  
+  /*fin header desktop*/
+  
+/*début barre de recherche desktop*/
+.slogan_barre_de_recherche {
+    margin-top: 2rem;
+  }
+
+  
+  .slogan_barre_de_recherche h1{
+    margin-bottom: 1rem;
+  }
+
+#Barre_de_recherche {
+  display: flex;
+  align-items: center;
+
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+
+}
+
+#Barre_de_recherche span.gauche {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px 15px;
+  height: 50px;
+  background-color: #ccc;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: #ccc solid 1px;
+}
+
+#Barre_de_recherche span.milieu {
+  display: flex;
+  align-items: center;
+  border: #ccc solid 1px;
+  height: 50px;
+
+  margin-left: -5px;
+}
+
+#Barre_de_recherche input {
+  padding-left: 10px;
+  height: 100%;
+  width: 100%;
+  border-color: transparent;
+}
+#Barre_de_recherche button {
+ background-color: transparent;
+ border: inherit;
+}
+
+#Barre_de_recherche button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+#Barre_de_recherche span.droite {
+  display: flex;
+  align-items: center;
+  border: #0265FC solid 1px;
+  background-color: #0265FC;
+  height: 50px;
+  padding: 0 15px;
+  margin-left: -5px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#Barre_de_recherche span.droite input {
+
+  /* font-weight: bold; */
+  background-color: transparent;
+  border: none;
+}
+
+#Barre_de_recherche.val_search,
+#Barre_de_recherche.fa-search {
+  color: white;
+}
+
+#Barre_de_recherche.fa-search {
+  display: none;
+}
+/*fin barre de recherche desktop*/
+  
