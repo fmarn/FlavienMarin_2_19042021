@@ -12,4 +12,63 @@
   .global{
     margin: 0 50px;
   }
+
+/*début header desktop*/
+header {
+    display: flex;
   
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  #login {
+    padding-top: 40px;
+    margin-right: 40px;
+  }
+  
+  #login a {
+    color: #0065fc;
+  }
+  
+  #logo {
+    flex: 1;
+    width: 100px;
+    padding-top: 35px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    padding-top: 40px;
+    margin-right: 40px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+  
+  nav ul li:hover {
+    border-top: 3px solid #0065fc;
+    padding-top: 37px;
+  }
+  
+  nav ul a:hover {
+    color: #0065fc;
+  }
+  
+  h1 {
+    font-size: 1.4rem;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+  }
+  /*fin header desktop*/  
