@@ -479,6 +479,78 @@ footer {
     justify-content: left;
   }
   /* fin footer desktop*/
+
+
+/* -------------------Responsive sur tablette---------------- */
+
+
+@media screen and (max-width: 1024px) {
+
   
+    /* -------------------hebergements & populaires & activites---------------- */
+    
+       .rubrique_hotel {
+        flex: 40%;
+      }
+    
+      .hotels {
+        flex-direction: column;
+      }
+    
+      .hotels article {
+        order: 2;
+        margin-top: 2.5rem;
+      }
+    
+      .bord-hotels {
+        margin: 0;
+      }
+    
+      .tableau_populaire {
+        display: flex;
+        flex-wrap: wrap;
+    
+      }
+    
+      .rubrique_populaire {
+        flex: 30%;
+        margin-right: 15px;
+      }
+    
+    
+      .activites {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+          "a b d"
+          "e c f";
+      }
+    }
+    
+    
+    
+    @media screen and (max-width: 965px) {
+      .rubrique_populaire {
+        flex: 100%;
+      }
+      .hotels .populaire {
+        margin-left: 0px;
+    }
+    }
+    
+    
+    @media screen and (max-width: 768px) {
+      .activites {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "a b"
+          "c d"
+          "e f";
+      }
+    
+    }
+    
+      
   
   
