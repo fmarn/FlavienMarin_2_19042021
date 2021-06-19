@@ -451,5 +451,34 @@ section#hebergements {
     grid-area: f;
   }
   /* fin activité desktop*/
+
+/* début footer desktop*/
+footer {
+    display: flex;
+  
+    margin-top: 50px;
+    padding: 35px 50px 60px 50px;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+  }
+  
+  footer li {
+    list-style-type: none;
+    margin: 5px;
+    margin-left: 0;
+  }
+  
+  
+  #propos,
+  #hebergement,
+  #assistance {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-top: 25px;
+    justify-content: left;
+  }
+  /* fin footer desktop*/
+  
   
   
