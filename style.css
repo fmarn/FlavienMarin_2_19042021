@@ -379,6 +379,77 @@ section#hebergements {
     margin-top: 8px;
     margin-bottom: 0;
   }
+  /* début activité desktop*/
+
+#hotels_activites h1 {
+    margin: 2.5rem 0rem 2rem 0rem;
+  }
   
+  
+  .activites {
+    display: grid;
+    height: auto;
+    gap: 27px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "a b d e"
+      "a c d f";
+  
+  }
+  
+  .activites .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+  }
+  
+  .activites img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+  }
+  
+  .activites .texte_image_activite {
+    padding: 10px;
+    background-color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  
+  .img1 {
+    grid-area: a
+  }
+  
+  .img2 {
+    grid-area: b;
+  }
+  
+  .img3 {
+    grid-area: c;
+  }
+  
+  .img4 {
+    grid-area: d;
+  }
+  
+  .img5 {
+    grid-area: e;
+  }
+  
+  .img6 {
+    grid-area: f;
+  }
+  /* fin activité desktop*/
   
   
