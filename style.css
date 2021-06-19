@@ -218,3 +218,112 @@ header {
   }
   /*fin filtre desktop*/
   
+/*début hebergement desktop*/
+section#hebergements {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #hebergements p.info i {
+    color: #0265FC;
+    border-radius: 50%;
+    border: #ccc solid 1px;
+    padding: 10px 15px;
+    margin-right: 10px;
+  }
+  
+  
+  .hotels {
+    display: flex;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .hotels
+  .populaire {
+    margin-left: 20px;
+  }
+  
+  .hotels article,
+  .bord_hotels {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding-left: 2rem;
+    padding-top: 2rem;
+  
+  }
+  
+  .bord_hotels  {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .hotels .marseille {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  .hotels h1,
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  
+  
+  .rubrique_hotel {
+    /*  background-color: dodgerblue;*/
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    box-sizing: border-box;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+    margin-right: 30px;
+    /* margin-left: 15px; */
+    margin-bottom: 30px;
+    flex: 30%;
+  }
+  
+  .rubrique_hotel img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+  }
+  
+  
+  .hotel_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 5px 10px;
+  }
+  
+  .hotel_description p,
+  h3 {
+    margin: 0;
+  }
+  
+  .hotel_notation {
+    word-spacing: -1ch;
+  }
+  
+  .fa-star {
+    font-size: .8rem;
+    letter-spacing: 2px;
+  }
+  
+  .blue_star {
+    color: #0065FC;
+  }
+  
+  .grey_star {
+    color: #e6e1e1;
+  }
+  
+  
+  
+  
