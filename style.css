@@ -71,6 +71,9 @@ header {
   h3 {
     font-size: 1rem;
   }
+  h3.nom_hotel{
+    display: flex;
+  }
   /*fin header desktop*/
   
 /*début barre de recherche desktop*/
@@ -83,7 +86,7 @@ header {
     margin-bottom: 1rem;
   }
 
-#Barre_de_recherche {
+#barre_de_recherche {
   display: flex;
   align-items: center;
 
@@ -94,7 +97,7 @@ header {
 
 }
 
-#Barre_de_recherche span.gauche {
+#barre_de_recherche span.gauche {
   display: flex;
   align-items: center;
   margin: 0px;
@@ -106,7 +109,7 @@ header {
   border: #ccc solid 1px;
 }
 
-#Barre_de_recherche span.milieu {
+#barre_de_recherche span.milieu {
   display: flex;
   align-items: center;
   border: #ccc solid 1px;
@@ -115,24 +118,24 @@ header {
   margin-left: -5px;
 }
 
-#Barre_de_recherche input {
+#barre_de_recherche input {
   padding-left: 10px;
   height: 100%;
   width: 100%;
   border-color: transparent;
 }
-#Barre_de_recherche button {
+#barre_de_recherche button {
  background-color: transparent;
  border: inherit;
 }
 
-#Barre_de_recherche button:focus {
+#barre_de_recherche button:focus {
   outline: none;
   box-shadow: none;
 }
 
 
-#Barre_de_recherche span.droite {
+#barre_de_recherche span.droite {
   display: flex;
   align-items: center;
   border: #0265FC solid 1px;
@@ -144,20 +147,20 @@ header {
   border-top-right-radius: 10px;
 }
 
-#Barre_de_recherche span.droite input {
+#barre_de_recherche span.droite input {
 
   /* font-weight: bold; */
   background-color: transparent;
   border: none;
 }
 
-#Barre_de_recherche.val_search,
-#Barre_de_recherche.fa-search {
+#barre_de_recherche .val_search,
+#barre_de_recherche .fa-search {
   
   color: white;
 }
 
-#Barre_de_recherche.fa-search {
+#barre_de_recherche .fa-search {
   display: none;
 }
 /*fin barre de recherche desktop*/
@@ -327,53 +330,16 @@ section#hebergements {
   
 /* populaire */
 
-.hostingPopular {
-  display: grid;
-  row-gap: 2rem;
-  align-items: start;
-  grid-template-rows: auto repeat(3, 1fr);
-}
-.hostingPopularTitle {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-.hostingPopularWrapcontent {
-  display: flex;
-  align-items: stretch;
-  height: 100%;
-  overflow: auto;
-}
-.hostingPopularWrapcontentWrapimg {
-  position: relative;
-  min-height: 100%;
-  width: 33%;
-  min-width: 33%;
-  max-width: 33%;
-}
-.hostingPopularWrapcontentWrapimgImg {
-  border-radius: 1rem 0 0 1rem;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hostingPopularWrapcontentContent {
-  display: flex;
-  flex-direction: column;
-}
-.hostingPopularWrapcontentContentWhitespace {
-  flex: 1;
-}
-.hostingPopularhostingMainCard {
-  height: 8.75rem;
-}
-___
 aside.populaire {
   background-color: #f2f2f2;
     border-radius: 20px;
     padding-left: 2rem;
     padding-top: 2rem;
+    padding-right: 2rem;
+}
+.populaire h1{
+  display: flex;
+  justify-content: space-between;
 }
 .tableau_populaire {
     display: flex;
@@ -381,20 +347,6 @@ aside.populaire {
   
   }
   
-  
-  .icone_populaire {
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  
-  .icone_populaire h2 {
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
-  
-  .icone_populaire i {
-    font-size: 1.5rem;
-  }
   
   .rubrique_populaire {
     display: flex;
@@ -674,17 +626,17 @@ footer {
   
     }
   
-    #barre_de_recherche .middle {
+    #barre_de_recherche .milieu {
       flex: 1;
     }
   
   
-    #barre_de_recherche span.right {
+    #barre_de_recherche span.droite {
       padding: 0 15px;
       border-radius: 10px;
     }
   
-    #barre_de_recherche .val_search {
+    #barre_de_recherche span.val_search {
       display: none;
     }
   
